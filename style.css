@@ -7,8 +7,8 @@
   --shadow:0 18px 40px -22px rgba(23,60,46,.35);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth; scroll-padding-top:88px}
-body{margin:0;font-family:'Work Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth; scroll-padding-top:88px; overflow-x:hidden; max-width:100%}
+body{margin:0;font-family:'Work Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100%}
 img{max-width:100%;display:block}
 a{color:inherit}
 h1,h2,h3{font-family:'Fraunces',serif;color:var(--green-deep);margin:0;line-height:1.12;font-weight:600}
@@ -149,14 +149,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
 .footer-brand img{width:32px;height:32px}
 .footer-brand span{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;color:var(--paper)}
 .footer-tag{color:var(--green-mid);max-width:260px;font-size:.95rem}
-footer nav{display:flex;gap:28px}
+footer nav{display:flex;flex-wrap:wrap;row-gap:12px;column-gap:24px}
 footer nav a{text-decoration:none;color:var(--cream);font-size:.95rem}
 footer nav a:hover{color:var(--green-mid)}
 .footer-bottom{margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:.85rem;color:rgba(249,240,231,.6);text-align:center}
 
 /* whatsapp float */
-.wa-float{position:fixed;bottom:22px;right:22px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px -8px rgba(0,0,0,.4);z-index:90;transition:transform .2s ease}
+.wa-float{position:fixed;bottom:22px;right:22px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px -8px rgba(0,0,0,.4);z-index:90;transition:transform .2s ease, opacity .3s ease}
+.wa-float.pre-scroll{opacity:0;pointer-events:none}
 .wa-float:hover{transform:scale(1.08)}
+@media(prefers-reduced-motion:reduce){.wa-float{transition:none}}
 .wa-float svg{width:30px;height:30px}
 
 /* reveal */
