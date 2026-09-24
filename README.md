@@ -5,17 +5,18 @@ Site institucional completo da Educare & Crescer: reforço escolar, preparatóri
 ## Estrutura do projeto
 
 ```
+Educare-crescer/
+│
 ├── index.html
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── script.js
-│   └── img/
-│       ├── logo.png
-│       ├── alunos.jpg
-│       ├── criancas-1.jpg
-│       └── criancas-2.jpg
+├── style.css
+├── script.js
+│
+├── img/
+│   ├── logo.png
+│   ├── alunos.jpg
+│   ├── criancas-1.jpg
+│   └── criancas-2.jpg
+│
 └── README.md
 ```
 
@@ -23,7 +24,7 @@ Site institucional completo da Educare & Crescer: reforço escolar, preparatóri
 
 1. Crie um repositório novo no GitHub (ex: `educare-crescer`).
 2. Envie todos os arquivos desta pasta para o repositório, mantendo a mesma estrutura (o `index.html` precisa ficar na raiz).
-   - Pelo site do GitHub: botão **Add file → Upload files**, arraste tudo (inclusive a pasta `assets`) e faça o commit.
+   - Pelo site do GitHub: botão **Add file → Upload files**, arraste tudo (inclusive a pasta `img`) e faça o commit.
    - Ou pelo terminal:
      ```bash
      git init
@@ -42,9 +43,9 @@ Site institucional completo da Educare & Crescer: reforço escolar, preparatóri
 ## Editar conteúdo
 
 - Textos e estrutura: `index.html`
-- Cores, fontes e layout: `assets/css/style.css`
-- Menu mobile, animações e efeito de rolagem: `assets/js/script.js`
-- Fotos e logo: arquivos dentro de `assets/img/`
+- Cores, fontes e layout: `style.css`
+- Menu mobile, animações e efeito de rolagem: `script.js`
+- Fotos e logo: arquivos dentro de `img/`
 - Número de WhatsApp: procure por `5521974043443` no `index.html` e substitua em todos os lugares.
 - Instagram: procure por `educ.areecrescer`.
 
